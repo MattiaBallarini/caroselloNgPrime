@@ -6,15 +6,13 @@
     <ng-template let-utenti pTemplate="item">
         <div class="product-item">
             <div class="product-item-content">
-                <div class="p-mb-3">
-                </div>
                 <div>
                     <img class="product-image" [src]="utenti?.avatar">
-                    <h4 class="p-mb-0">{{utenti?.first_name}} {{utenti?.last_name}}</h4>
-                    <p class="p-mb-4">{{utenti?.email}}</p>
-                    <div class="car-buttons p-mt-5">
-                        <p-button type="button" styleClass="p-button" icon="pi pi-search"></p-button>
-                        <p-button type="button" styleClass="p-button-success" icon="pi pi-star"></p-button>
+                    <h4 class="mb-0">{{utenti?.first_name}} {{utenti?.last_name}}</h4>
+                    <p class="mb-4">{{utenti?.email}}</p>
+                    <div class="car-buttons mt-5">
+                        <p-button type="button" styleClass="p-button mr-1" icon="pi pi-search"></p-button>     
+                        <p-button type="button" styleClass="p-button-success mr-1" icon="pi pi-star"></p-button>
                         <p-button type="button" styleClass="p-button-help" icon="pi pi-cog"></p-button>
                     </div>
                 </div>
