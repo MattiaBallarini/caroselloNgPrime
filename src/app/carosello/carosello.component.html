@@ -1,0 +1,25 @@
+<!-- la variabile circular a false impedisce di renderlo circolare, mettere a true in caso contrario -->
+<p-carousel [value]="utenti!" [circular]="false" [responsiveOptions]="responsiveOptions">
+    
+    <!-- il let-utenti in questo tag funge come una sorta di ngFor -->
+    <!-- infatti utenti è un array che contiene tutti gli utenti -->
+    <ng-template let-utenti pTemplate="item">
+        <div class="product-item">
+            <div class="product-item-content">
+                <div class="p-mb-3">
+                </div>
+                <div>
+                    <img class="product-image" [src]="utenti?.avatar">
+                    <h4 class="p-mb-0">{{utenti?.first_name}} {{utenti?.last_name}}</h4>
+                    <p class="p-mb-4">{{utenti?.email}}</p>
+                    <div class="car-buttons p-mt-5">
+                        <p-button type="button" styleClass="p-button" icon="pi pi-search"></p-button>
+                        <p-button type="button" styleClass="p-button-success" icon="pi pi-star"></p-button>
+                        <p-button type="button" styleClass="p-button-help" icon="pi pi-cog"></p-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+</p-carousel>
